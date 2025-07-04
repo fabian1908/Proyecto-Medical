@@ -2,8 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 // --- CONFIGURACIÓN --- (Mantenemos la misma configuración)
-const API_KEY = 'AIzaSyCPvCYaBo4t3G3t6BvBId5fN-LAHzWzmh0';
-const MODEL_NAME = 'gemini-1.5-flash-latest';
+
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent?key=${API_KEY}`;
 
 const ChatbotPage = () => {
