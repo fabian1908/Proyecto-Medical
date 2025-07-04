@@ -5,7 +5,7 @@
 Ingresa a la ruta donde descargar el proyecto con Power Shell
 
 ```bash
-git clone https://github.com/RafaelSolier/Proyecto-DS.git
+git clone https://github.com/fabian1908/Proyecto-Medical.git
 ```
 2. En el terminal crea nuevo contenedor:
 
