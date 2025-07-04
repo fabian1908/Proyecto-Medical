@@ -1,0 +1,337 @@
+{
+  "citas": [
+    {
+      "idCita": 1,
+      "idServicio": 1,
+      "idConsultorio": 1,
+      "idMedico": 1,
+      "dniPersona": "12345678",
+      "motivo": "Dolor de cabeza persistente",
+      "fechaHoraInicio": "12:59",
+      "fechaHoraFin": "13:23",
+      "estado": "CONFIRMADo",
+      "descripcion": "Consulta de neurología por cefaleas",
+      "id": 1
+    },
+    {
+      "idCita": 2,
+      "idServicio": 2,
+      "idConsultorio": 2,
+      "idMedico": 2,
+      "dniPersona": "87654321",
+      "motivo": "Control rutinario",
+      "fechaHoraInicio": "2025-07-11T14:30:00Z",
+      "fechaHoraFin": "2025-07-11T15:30:00Z",
+      "estado": "PENDIENTE",
+      "descripcion": "Chequeo cardiológico anual",
+      "id": 2
+    },
+    {
+      "idCita": 3,
+      "idServicio": 3,
+      "idConsultorio": 3,
+      "idMedico": 3,
+      "dniPersona": "11223344",
+      "motivo": "Dolor en rodilla izquierda",
+      "fechaHoraInicio": "2025-07-12T16:00:00Z",
+      "fechaHoraFin": "2025-07-12T17:00:00Z",
+      "estado": "COMPLETADA",
+      "descripcion": "Evaluación traumatológica",
+      "id": 3
+    }
+  ],
+  "consultorios": [
+    {
+      "id": 1,
+      "ruc": "20123456789",
+      "nombre": "Consultorio Neurología",
+      "ubicacion": "Piso 2 - Ala Norte",
+      "direccion": "Av. Salud 123, Lima",
+      "telefono": "01-2345678"
+    },
+    {
+      "id": 2,
+      "ruc": "20123456789",
+      "nombre": "Consultorio Cardiología",
+      "ubicacion": "Piso 1 - Ala Este",
+      "direccion": "Av. Salud 123, Lima",
+      "telefono": "01-2345679"
+    },
+    {
+      "id": 3,
+      "ruc": "20123456789",
+      "nombre": "Consultorio Traumatología",
+      "ubicacion": "Piso 3 - Ala Oeste",
+      "direccion": "Av. Salud 123, Lima",
+      "telefono": "01-2345680"
+    },
+    {
+      "id": 4,
+      "ruc": "20123450009",
+      "nombre": "Consultorio Neurología",
+      "ubicacion": "Piso 2 - Ala Norte",
+      "direccion": "Av. Salud 123, Lima",
+      "telefono": "01-2345678"
+    }
+  ],
+  "detalle-pagos": [
+    {
+      "id": 1,
+      "monto": 150,
+      "metodoPago": "TARJETA",
+      "estadoPago": "PAGADO",
+      "fechaPago": "2025-07-10T09:30:00Z",
+      "cita": 1
+    },
+    {
+      "id": 2,
+      "monto": 200,
+      "metodoPago": "EFECTIVO",
+      "estadoPago": "PENDIENTE",
+      "fechaPago": null,
+      "cita": 2
+    },
+    {
+      "id": 3,
+      "monto": 180,
+      "metodoPago": "TARJETA",
+      "estadoPago": "PAGADO",
+      "fechaPago": "2025-07-12T17:15:00Z",
+      "cita": 3
+    }
+  ],
+  "diagnosticos": [
+    {
+      "idDiagnostico": 1,
+      "idCita": 1,
+      "descripcion": "Cefalea tensional. Se recomienda manejo del estrés y analgésicos según necesidad.",
+      "fechaDiagnostico": "2025-07-10T09:45:00Z",
+      "id": 1
+    },
+    {
+      "idDiagnostico": 2,
+      "idCita": 3,
+      "descripcion": "Condromalacia rotuliana grado I. Tratamiento conservador con fisioterapia.",
+      "fechaDiagnostico": "2025-07-12T16:45:00Z",
+      "id": 2
+    }
+  ],
+  "especialidades": [
+    {
+      "id": 1,
+      "nombre": "Neurología",
+      "descripcion": "Especialidad médica que se dedica al estudio del sistema nervioso"
+    },
+    {
+      "id": 2,
+      "nombre": "Pedriatría",
+      "descripcion": "Se encarga de ver todo lo realicionado a nenes"
+    }
+  ],
+  "horario_Doctor": [
+    {
+      "id": 1,
+      "idDoctor": 1,
+      "diaSemana": "LUNES",
+      "horaInicio": "08:00",
+      "horaFin": "12:00",
+      "duracionMinutos": 60
+    },
+    {
+      "id": 2,
+      "idDoctor": 1,
+      "diaSemana": "MIERCOLES",
+      "horaInicio": "14:00",
+      "horaFin": "18:00",
+      "duracionMinutos": 60
+    },
+    {
+      "id": 3,
+      "idDoctor": 2,
+      "diaSemana": "MARTES",
+      "horaInicio": "09:00",
+      "horaFin": "17:00",
+      "duracionMinutos": 30
+    },
+    {
+      "id": 4,
+      "idDoctor": 3,
+      "diaSemana": "JUEVES",
+      "horaInicio": "15:00",
+      "horaFin": "19:00",
+      "duracionMinutos": 45
+    }
+  ],
+  "permisos": [
+    {
+      "id": 1,
+      "idpermisohistorial": 1,
+      "iddoctor": 1,
+      "idpaciente": 1,
+      "fechaotorgapermiso": "2025-07-01T10:00:00Z",
+      "fechadeniegapermiso": null,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": 2,
+      "idpermisohistorial": 2,
+      "iddoctor": 2,
+      "idpaciente": 2,
+      "fechaotorgapermiso": "2025-07-02T11:00:00Z",
+      "fechadeniegapermiso": null,
+      "estado": "ACTIVO"
+    }
+  ],
+  "personas": [
+    {
+      "id": 1,
+      "dni": "12345678",
+      "nombres": "Juan Carlos",
+      "apellidos": "Pérez García",
+      "celular": "987654321",
+      "direccion": "Av. Los Olivos 456, San Isidro",
+      "fechaNacimiento": "1985-03-15"
+    },
+    {
+      "id": 2,
+      "dni": "87654321",
+      "nombres": "María Elena",
+      "apellidos": "Rodríguez Silva",
+      "celular": "912345678",
+      "direccion": "Jr. Las Flores 789, Miraflores",
+      "fechaNacimiento": "1978-11-22"
+    },
+    {
+      "id": 3,
+      "dni": "11223344",
+      "nombres": "Luis Alberto",
+      "apellidos": "Mendoza Torres",
+      "celular": "956789123",
+      "direccion": "Calle Los Pinos 321, Surco",
+      "fechaNacimiento": "1990-07-08"
+    }
+  ],
+  "recetas": [
+    {
+      "idReceta": 1,
+      "idCita": 1,
+      "descripcion": "Paracetamol 500mg - 1 tableta cada 8 horas por 3 días en caso de dolor. Ibuprofeno 400mg - 1 tableta cada 12 horas por 5 días.",
+      "id": 1
+    },
+    {
+      "idReceta": 2,
+      "idCita": 3,
+      "descripcion": "Diclofenaco gel - Aplicar 2 veces al día en zona afectada. Complejo B - 1 cápsula diaria por 30 días.",
+      "id": 2
+    }
+  ],
+  "recomendaciones": [
+    {
+      "idRecomendacion": 1,
+      "idCita": 1,
+      "descripcion": "Evitar el estrés prolongado, realizar ejercicios de relajación, mantener horarios regulares de sueño (7-8 horas diarias).",
+      "id": 1
+    },
+    {
+      "idRecomendacion": 2,
+      "idCita": 2,
+      "descripcion": "Mantener dieta baja en sodio, ejercicio cardiovascular moderado 30 min diarios, control de peso.",
+      "id": 2
+    },
+    {
+      "idRecomendacion": 3,
+      "idCita": 3,
+      "descripcion": "Fisioterapia 3 veces por semana, evitar actividades de alto impacto, fortalecer músculos del muslo.",
+      "id": 3
+    }
+  ],
+  "resenias": [
+    {
+      "idResenia": 1,
+      "idDoctor": 1,
+      "calificacion": 5,
+      "comentario": "Excelente atención, muy profesional y explicó claramente el diagnóstico.",
+      "id": 1
+    },
+    {
+      "idResenia": 2,
+      "idDoctor": 2,
+      "calificacion": 4,
+      "comentario": "Buen médico, pero la espera fue un poco larga.",
+      "id": 2
+    },
+    {
+      "idResenia": 3,
+      "idDoctor": 3,
+      "calificacion": 5,
+      "comentario": "Muy recomendado, tratamiento efectivo y seguimiento constante.",
+      "id": 3
+    }
+  ],
+  "servicios": [
+    {
+      "idServicio": 1,
+      "idEspecialidad": 1,
+      "nombre": "Consulta Neurológica",
+      "descripcion": "Evaluación y diagnóstico de trastornos del sistema nervioso",
+      "riesgos": "Mínimos, procedimiento no invasivo",
+      "id": 1
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "dniPersona": "12345678",
+      "tipoUsuarioId": 1,
+      "usuario": "jperez",
+      "contrasenia": "123456",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "estado": "ACTIVO"
+    },
+    {
+      "id": 2,
+      "dniPersona": "87654321",
+      "tipoUsuarioId": 2,
+      "usuario": "mrodriguez",
+      "contrasenia": "hash789012",
+      "token": null,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": 3,
+      "dniPersona": "11223344",
+      "tipoUsuarioId": 1,
+      "usuario": "lmendoza",
+      "contrasenia": "hash345678",
+      "token": null,
+      "estado": "INACTIVO"
+    },
+    {
+      "id": 4,
+      "dniPersona": "99999999",
+      "tipoUsuarioId": 3,
+      "usuario": "admin",
+      "contrasenia": "admin",
+      "token": null,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": 5,
+      "dniPersona": "111",
+      "tipoUsuarioId": 3,
+      "usuario": "nuevouser",
+      "contrasenia": "123456",
+      "token": "null",
+      "estado": "ACTIVO"
+    },
+    {
+      "id": 6,
+      "dniPersona": "74237064",
+      "tipoUsuarioId": 2,
+      "usuario": "doctor",
+      "contrasenia": "doctor",
+      "token": "null",
+      "estado": "INACTIVO"
+    }
+  ]
+}
